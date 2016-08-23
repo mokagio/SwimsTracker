@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FCB52261D6BEF3600E1F513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52251D6BEF3600E1F513 /* AppDelegate.swift */; };
+		3FCB52281D6BEF3600E1F513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52271D6BEF3600E1F513 /* ViewController.swift */; };
+		3FCB522B1D6BEF3600E1F513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCB52291D6BEF3600E1F513 /* Main.storyboard */; };
+		3FCB522D1D6BEF3600E1F513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCB522C1D6BEF3600E1F513 /* Assets.xcassets */; };
+		3FCB52301D6BEF3600E1F513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCB522E1D6BEF3600E1F513 /* LaunchScreen.storyboard */; };
+		3FCB523B1D6BEF3600E1F513 /* SwimsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB523A1D6BEF3600E1F513 /* SwimsTrackerTests.swift */; };
+		3FCB52461D6BEF3600E1F513 /* SwimsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52451D6BEF3600E1F513 /* SwimsTrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FCB52371D6BEF3600E1F513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FCB521A1D6BEF3500E1F513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCB52211D6BEF3500E1F513;
+			remoteInfo = SwimsTracker;
+		};
+		3FCB52421D6BEF3600E1F513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FCB521A1D6BEF3500E1F513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCB52211D6BEF3500E1F513;
+			remoteInfo = SwimsTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FCB52221D6BEF3500E1F513 /* SwimsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCB52251D6BEF3600E1F513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FCB52271D6BEF3600E1F513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FCB522A1D6BEF3600E1F513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FCB522C1D6BEF3600E1F513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FCB522F1D6BEF3600E1F513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FCB52311D6BEF3600E1F513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCB52361D6BEF3600E1F513 /* SwimsTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwimsTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCB523A1D6BEF3600E1F513 /* SwimsTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimsTrackerTests.swift; sourceTree = "<group>"; };
+		3FCB523C1D6BEF3600E1F513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCB52411D6BEF3600E1F513 /* SwimsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwimsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCB52451D6BEF3600E1F513 /* SwimsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimsTrackerUITests.swift; sourceTree = "<group>"; };
+		3FCB52471D6BEF3600E1F513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FCB521F1D6BEF3500E1F513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCB52331D6BEF3600E1F513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCB523E1D6BEF3600E1F513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FCB52191D6BEF3500E1F513 = {
+			isa = PBXGroup;
+			children = (
+				3FCB52241D6BEF3600E1F513 /* SwimsTracker */,
+				3FCB52391D6BEF3600E1F513 /* SwimsTrackerTests */,
+				3FCB52441D6BEF3600E1F513 /* SwimsTrackerUITests */,
+				3FCB52231D6BEF3500E1F513 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		3FCB52231D6BEF3500E1F513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB52221D6BEF3500E1F513 /* SwimsTracker.app */,
+				3FCB52361D6BEF3600E1F513 /* SwimsTrackerTests.xctest */,
+				3FCB52411D6BEF3600E1F513 /* SwimsTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FCB52241D6BEF3600E1F513 /* SwimsTracker */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB52251D6BEF3600E1F513 /* AppDelegate.swift */,
+				3FCB52271D6BEF3600E1F513 /* ViewController.swift */,
+				3FCB52291D6BEF3600E1F513 /* Main.storyboard */,
+				3FCB522C1D6BEF3600E1F513 /* Assets.xcassets */,
+				3FCB522E1D6BEF3600E1F513 /* LaunchScreen.storyboard */,
+				3FCB52311D6BEF3600E1F513 /* Info.plist */,
+			);
+			path = SwimsTracker;
+			sourceTree = "<group>";
+		};
+		3FCB52391D6BEF3600E1F513 /* SwimsTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB523A1D6BEF3600E1F513 /* SwimsTrackerTests.swift */,
+				3FCB523C1D6BEF3600E1F513 /* Info.plist */,
+			);
+			path = SwimsTrackerTests;
+			sourceTree = "<group>";
+		};
+		3FCB52441D6BEF3600E1F513 /* SwimsTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB52451D6BEF3600E1F513 /* SwimsTrackerUITests.swift */,
+				3FCB52471D6BEF3600E1F513 /* Info.plist */,
+			);
+			path = SwimsTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FCB52211D6BEF3500E1F513 /* SwimsTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCB524A1D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTracker" */;
+			buildPhases = (
+				3FCB521E1D6BEF3500E1F513 /* Sources */,
+				3FCB521F1D6BEF3500E1F513 /* Frameworks */,
+				3FCB52201D6BEF3500E1F513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwimsTracker;
+			productName = SwimsTracker;
+			productReference = 3FCB52221D6BEF3500E1F513 /* SwimsTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FCB52351D6BEF3600E1F513 /* SwimsTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCB524D1D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTrackerTests" */;
+			buildPhases = (
+				3FCB52321D6BEF3600E1F513 /* Sources */,
+				3FCB52331D6BEF3600E1F513 /* Frameworks */,
+				3FCB52341D6BEF3600E1F513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCB52381D6BEF3600E1F513 /* PBXTargetDependency */,
+			);
+			name = SwimsTrackerTests;
+			productName = SwimsTrackerTests;
+			productReference = 3FCB52361D6BEF3600E1F513 /* SwimsTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FCB52401D6BEF3600E1F513 /* SwimsTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCB52501D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTrackerUITests" */;
+			buildPhases = (
+				3FCB523D1D6BEF3600E1F513 /* Sources */,
+				3FCB523E1D6BEF3600E1F513 /* Frameworks */,
+				3FCB523F1D6BEF3600E1F513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCB52431D6BEF3600E1F513 /* PBXTargetDependency */,
+			);
+			name = SwimsTrackerUITests;
+			productName = SwimsTrackerUITests;
+			productReference = 3FCB52411D6BEF3600E1F513 /* SwimsTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FCB521A1D6BEF3500E1F513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mokagio;
+				TargetAttributes = {
+					3FCB52211D6BEF3500E1F513 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3FCB52351D6BEF3600E1F513 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3FCB52211D6BEF3500E1F513;
+					};
+					3FCB52401D6BEF3600E1F513 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3FCB52211D6BEF3500E1F513;
+					};
+				};
+			};
+			buildConfigurationList = 3FCB521D1D6BEF3500E1F513 /* Build configuration list for PBXProject "SwimsTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FCB52191D6BEF3500E1F513;
+			productRefGroup = 3FCB52231D6BEF3500E1F513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FCB52211D6BEF3500E1F513 /* SwimsTracker */,
+				3FCB52351D6BEF3600E1F513 /* SwimsTrackerTests */,
+				3FCB52401D6BEF3600E1F513 /* SwimsTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FCB52201D6BEF3500E1F513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCB52301D6BEF3600E1F513 /* LaunchScreen.storyboard in Resources */,
+				3FCB522D1D6BEF3600E1F513 /* Assets.xcassets in Resources */,
+				3FCB522B1D6BEF3600E1F513 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCB52341D6BEF3600E1F513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCB523F1D6BEF3600E1F513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FCB521E1D6BEF3500E1F513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCB52281D6BEF3600E1F513 /* ViewController.swift in Sources */,
+				3FCB52261D6BEF3600E1F513 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCB52321D6BEF3600E1F513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCB523B1D6BEF3600E1F513 /* SwimsTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCB523D1D6BEF3600E1F513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCB52461D6BEF3600E1F513 /* SwimsTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FCB52381D6BEF3600E1F513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCB52211D6BEF3500E1F513 /* SwimsTracker */;
+			targetProxy = 3FCB52371D6BEF3600E1F513 /* PBXContainerItemProxy */;
+		};
+		3FCB52431D6BEF3600E1F513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCB52211D6BEF3500E1F513 /* SwimsTracker */;
+			targetProxy = 3FCB52421D6BEF3600E1F513 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FCB52291D6BEF3600E1F513 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FCB522A1D6BEF3600E1F513 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FCB522E1D6BEF3600E1F513 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FCB522F1D6BEF3600E1F513 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FCB52481D6BEF3600E1F513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FCB52491D6BEF3600E1F513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FCB524B1D6BEF3600E1F513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwimsTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3FCB524C1D6BEF3600E1F513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwimsTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3FCB524E1D6BEF3600E1F513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwimsTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwimsTracker.app/SwimsTracker";
+			};
+			name = Debug;
+		};
+		3FCB524F1D6BEF3600E1F513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwimsTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwimsTracker.app/SwimsTracker";
+			};
+			name = Release;
+		};
+		3FCB52511D6BEF3600E1F513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwimsTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwimsTracker;
+			};
+			name = Debug;
+		};
+		3FCB52521D6BEF3600E1F513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwimsTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwimsTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FCB521D1D6BEF3500E1F513 /* Build configuration list for PBXProject "SwimsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCB52481D6BEF3600E1F513 /* Debug */,
+				3FCB52491D6BEF3600E1F513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCB524A1D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCB524B1D6BEF3600E1F513 /* Debug */,
+				3FCB524C1D6BEF3600E1F513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FCB524D1D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCB524E1D6BEF3600E1F513 /* Debug */,
+				3FCB524F1D6BEF3600E1F513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FCB52501D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCB52511D6BEF3600E1F513 /* Debug */,
+				3FCB52521D6BEF3600E1F513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FCB521A1D6BEF3500E1F513 /* Project object */;
+}
