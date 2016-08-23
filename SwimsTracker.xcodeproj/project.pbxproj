@@ -14,6 +14,8 @@
 		3FCB52301D6BEF3600E1F513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCB522E1D6BEF3600E1F513 /* LaunchScreen.storyboard */; };
 		3FCB523B1D6BEF3600E1F513 /* SwimsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB523A1D6BEF3600E1F513 /* SwimsTrackerTests.swift */; };
 		3FCB52461D6BEF3600E1F513 /* SwimsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52451D6BEF3600E1F513 /* SwimsTrackerUITests.swift */; };
+		3FCB52541D6C546100E1F513 /* Swim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52531D6C546100E1F513 /* Swim.swift */; };
+		3FCB52561D6C553300E1F513 /* Kilometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52551D6C553300E1F513 /* Kilometer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3FCB52411D6BEF3600E1F513 /* SwimsTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwimsTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCB52451D6BEF3600E1F513 /* SwimsTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimsTrackerUITests.swift; sourceTree = "<group>"; };
 		3FCB52471D6BEF3600E1F513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCB52531D6C546100E1F513 /* Swim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swim.swift; sourceTree = "<group>"; };
+		3FCB52551D6C553300E1F513 /* Kilometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kilometer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				3FCB522C1D6BEF3600E1F513 /* Assets.xcassets */,
 				3FCB522E1D6BEF3600E1F513 /* LaunchScreen.storyboard */,
 				3FCB52311D6BEF3600E1F513 /* Info.plist */,
+				3FCB52531D6C546100E1F513 /* Swim.swift */,
+				3FCB52551D6C553300E1F513 /* Kilometer.swift */,
 			);
 			path = SwimsTracker;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCB52281D6BEF3600E1F513 /* SwimListViewController.swift in Sources */,
+				3FCB52541D6C546100E1F513 /* Swim.swift in Sources */,
+				3FCB52561D6C553300E1F513 /* Kilometer.swift in Sources */,
 				3FCB52261D6BEF3600E1F513 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
