@@ -23,4 +23,14 @@ struct SwimListViewModel {
 
     return list.count
   }
+
+  func swim(atIndexPath indexPath: NSIndexPath) -> Swim? {
+    let index = indexPath.row
+
+    guard index >= 0 && list.count > index else {
+      return .None
+    }
+
+    return list[index]
+  }
 }

@@ -41,4 +41,70 @@ class SwimListViewModelTests: XCTestCase {
 
     XCTAssertNil(subject.rows(forSectionAtIndex: 42))
   }
+
+  // It returns the Swim model in the same position as the index path row, if the
+  // row is within the swims list lenght
+  func test_returnsSwimForIndexPath() {
+    let list = [
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 1),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 2),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 3)
+    ]
+    let subject = SwimListViewModel(list: list)
+
+    // TODO: Use proper equality test
+    let index = 1
+    let indexPath = NSIndexPath(forRow: index, inSection: 0)
+    XCTAssertEqual(subject.swim(atIndexPath: indexPath)?.duration, list[index].duration)
+  }
+
+  // It returns the Swim model in the same position as the index path row, if the
+  // row is within the swims list lenght
+  //
+  // Edge case: last item
+  func test_returnsSwimForIndexPath_edgeCase() {
+    let list = [
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 1),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 2),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 3)
+    ]
+    let subject = SwimListViewModel(list: list)
+
+    // TODO: Use proper equality test
+    let index = list.count - 1
+    let indexPath = NSIndexPath(forRow: index, inSection: 0)
+    XCTAssertEqual(subject.swim(atIndexPath: indexPath)?.duration, list[index].duration)
+  }
+
+  // It returns the .None when the index path row index is
+  // bigger than the swims list lenght.
+  func test_returnsSwimForIndexPath_outOfBounds() {
+    let list = [
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 1),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 2),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 3)
+    ]
+    let subject = SwimListViewModel(list: list)
+
+    let index = list.count
+    let indexPath = NSIndexPath(forRow: index, inSection: 0)
+    XCTAssertNil(subject.swim(atIndexPath: indexPath))
+  }
+
+  // It returns the .None when the index path row index is negative.
+  //
+  // This edge case should be impossible but since the type of
+  // row in NSIndexPath is Int and not UInt it is still worth
+  // checking.
+  func test_returnsSwimForIndexPath_edgeCase_2() {
+    let list = [
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 1),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 2),
+      Swim(date: NSDate(timeIntervalSinceNow: 0), length: 1, duration: 3)
+    ]
+    let subject = SwimListViewModel(list: list)
+
+    let indexPath = NSIndexPath(forRow: -1, inSection: 0)
+    XCTAssertNil(subject.swim(atIndexPath: indexPath))
+  }
 }
