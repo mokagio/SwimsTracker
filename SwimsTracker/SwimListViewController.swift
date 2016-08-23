@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SwimListViewController.swift
 //  SwimsTracker
 //
 //  Created by Giovanni on 23/08/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SwimListViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
