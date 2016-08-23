@@ -15,6 +15,8 @@
 		3FCB52461D6BEF3600E1F513 /* SwimsTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52451D6BEF3600E1F513 /* SwimsTrackerUITests.swift */; };
 		3FCB52541D6C546100E1F513 /* Swim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52531D6C546100E1F513 /* Swim.swift */; };
 		3FCB52561D6C553300E1F513 /* Kilometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52551D6C553300E1F513 /* Kilometer.swift */; };
+		3FCB525A1D6C578500E1F513 /* SwimListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52591D6C578500E1F513 /* SwimListViewModel.swift */; };
+		3FCB525C1D6C57C200E1F513 /* SwimListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB525B1D6C57C200E1F513 /* SwimListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3FCB52471D6BEF3600E1F513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FCB52531D6C546100E1F513 /* Swim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swim.swift; sourceTree = "<group>"; };
 		3FCB52551D6C553300E1F513 /* Kilometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kilometer.swift; sourceTree = "<group>"; };
+		3FCB52591D6C578500E1F513 /* SwimListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwimListViewModel.swift; sourceTree = "<group>"; };
+		3FCB525B1D6C57C200E1F513 /* SwimListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwimListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				3FCB52311D6BEF3600E1F513 /* Info.plist */,
 				3FCB52531D6C546100E1F513 /* Swim.swift */,
 				3FCB52551D6C553300E1F513 /* Kilometer.swift */,
+				3FCB52591D6C578500E1F513 /* SwimListViewModel.swift */,
 			);
 			path = SwimsTracker;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				3FCB523C1D6BEF3600E1F513 /* Info.plist */,
+				3FCB525B1D6C57C200E1F513 /* SwimListViewModelTests.swift */,
 			);
 			path = SwimsTrackerTests;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				3FCB52281D6BEF3600E1F513 /* SwimListViewController.swift in Sources */,
 				3FCB52541D6C546100E1F513 /* Swim.swift in Sources */,
 				3FCB52561D6C553300E1F513 /* Kilometer.swift in Sources */,
+				3FCB525A1D6C578500E1F513 /* SwimListViewModel.swift in Sources */,
 				3FCB52261D6BEF3600E1F513 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCB525C1D6C57C200E1F513 /* SwimListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwimsTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwimsTracker.app/SwimsTracker";
 			};
 			name = Debug;
@@ -441,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwimsTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.SwimsTrackerTests;
