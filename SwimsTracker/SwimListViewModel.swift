@@ -27,10 +27,9 @@ struct SwimListViewModel {
   func swim(atIndexPath indexPath: NSIndexPath) -> Swim? {
     let index = indexPath.row
 
-    guard index >= 0 && list.count > index else {
-      return .None
+    switch index {
+    case (0..<list.count): return list[index]
+    case _: return .None
     }
-
-    return list[index]
   }
 }
