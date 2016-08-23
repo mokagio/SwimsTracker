@@ -15,4 +15,12 @@ struct SwimListViewModel {
   func sections() -> Int {
     return 1
   }
+
+  func rows(forSectionAtIndex index: Int) -> Int? {
+    guard index == 0 else {
+      return .None
+    }
+
+    return list.count
+  }
 }
