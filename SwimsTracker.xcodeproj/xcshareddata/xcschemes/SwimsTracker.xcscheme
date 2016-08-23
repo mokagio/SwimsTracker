@@ -38,16 +38,6 @@
                ReferencedContainer = "container:SwimsTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3FCB52401D6BEF3600E1F513"
-               BuildableName = "SwimsTrackerUITests.xctest"
-               BlueprintName = "SwimsTrackerUITests"
-               ReferencedContainer = "container:SwimsTracker.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
