@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   let swimsService = SwimsService()
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+    guard let navigationController = window?.rootViewController as? UINavigationController else {
+      preconditionFailure()
+    }
+    guard let swimListViewController = navigationController.topViewController as? SwimListViewController else {
+      preconditionFailure()
+    }
+
+    swimListViewController.viewModel = SwimListViewModel(list: swimsService.allSwims())
+
     return true
   }
 }
