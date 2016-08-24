@@ -17,7 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-    guard let navigationController = window?.rootViewController as? UINavigationController else {
+    guard let tabBarController = window?.rootViewController as? UITabBarController else {
+      preconditionFailure()
+    }
+    guard let navigationController = tabBarController.viewControllers?.first as? UINavigationController else {
       preconditionFailure()
     }
     guard let swimListViewController = navigationController.topViewController as? SwimListViewController else {
