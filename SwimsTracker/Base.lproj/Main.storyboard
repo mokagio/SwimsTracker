@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Swim List View Controller-->
@@ -39,6 +40,71 @@
             </objects>
             <point key="canvasLocation" x="2015" y="1033"/>
         </scene>
+        <!--Stats View Controller-->
+        <scene sceneID="7F2-TR-roM">
+            <objects>
+                <viewController id="cfe-Ew-bvz" customClass="StatsViewController" customModule="SwimsTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qM7-np-JKb"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dF-zG-sH3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OZd-Kd-ilm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wVx-zW-aWu">
+                                <rect key="frame" x="20" y="64" width="560" height="487"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="total length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUd-nz-dsG">
+                                        <rect key="frame" x="237" y="0.0" width="87" height="244"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="pace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n7-Jk-tI4">
+                                        <rect key="frame" x="262" y="244" width="38" height="244"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wVx-zW-aWu" firstAttribute="top" secondItem="qM7-np-JKb" secondAttribute="bottom" id="4Np-pn-abK"/>
+                            <constraint firstItem="wVx-zW-aWu" firstAttribute="leading" secondItem="OZd-Kd-ilm" secondAttribute="leadingMargin" id="Jfa-yz-hfa"/>
+                            <constraint firstItem="0dF-zG-sH3" firstAttribute="top" secondItem="wVx-zW-aWu" secondAttribute="bottom" id="fxg-c0-1Rp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wVx-zW-aWu" secondAttribute="trailing" id="mv8-t5-kp2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xZz-q9-9Tn"/>
+                    <connections>
+                        <outlet property="paceLabel" destination="3n7-Jk-tI4" id="ctj-XB-1SU"/>
+                        <outlet property="totalLengthLabel" destination="fUd-nz-dsG" id="WdG-ye-GQT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0L-Br-bYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="1735"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3l7-dC-VFE">
+            <objects>
+                <navigationController id="fo7-FC-rJ7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="ySF-UR-EjC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OV9-ns-gfO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cfe-Ew-bvz" kind="relationship" relationship="rootViewController" id="U7F-vc-AaH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35a-AB-pTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="1735"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oNR-iN-FsS">
             <objects>
@@ -69,6 +135,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="WBd-j1-WiU" kind="relationship" relationship="viewControllers" id="C7S-o0-5c9"/>
+                        <segue destination="fo7-FC-rJ7" kind="relationship" relationship="viewControllers" id="0dY-GM-HVA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdV-9H-Yt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
