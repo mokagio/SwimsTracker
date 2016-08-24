@@ -12,7 +12,11 @@ class SwimListViewController: UIViewController {
 
   @IBOutlet var tableView: UITableView!
 
-  let dummyData: [String] = { (0...42).map { "Row \($0)" } }()
+  let dummyViewModel = SwimListViewModel(list: [
+    Swim(date: NSDate(timeIntervalSinceNow: -24 * 6 * 6), length: 2, duration: 60 * 60),
+    Swim(date: NSDate(timeIntervalSinceNow: -2 * 24 * 6 * 6), length: 2.1, duration: 60 * 60),
+    Swim(date: NSDate(timeIntervalSinceNow: -3 * 24 * 6 * 6), length: 2.2, duration: 60 * 60),
+  ])
 
   let cellIdentifier = "cell"
 
@@ -35,17 +39,22 @@ class SwimListViewController: UIViewController {
 extension SwimListViewController: UITableViewDataSource {
 
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return 1
+    return dummyViewModel.sections()
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return dummyData.count
+    return dummyViewModel.rows(forSectionAtIndex: section) ?? 0
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
-    let dummyValue = dummyData[indexPath.row]
-    cell.textLabel?.text = dummyValue
+
+    guard let swim = dummyViewModel.swim(atIndexPath: indexPath) else {
+      return cell
+    }
+
+    cell.textLabel?.text = "Swam for \(swim.length) km on \(swim.date)"
+
     return cell
   }
 }
