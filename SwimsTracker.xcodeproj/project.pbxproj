@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8EB56B1D6E2E0400FADD59 /* SwimsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8EB56A1D6E2E0400FADD59 /* SwimsService.swift */; };
 		3FCB52261D6BEF3600E1F513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52251D6BEF3600E1F513 /* AppDelegate.swift */; };
 		3FCB52281D6BEF3600E1F513 /* SwimListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52271D6BEF3600E1F513 /* SwimListViewController.swift */; };
 		3FCB522B1D6BEF3600E1F513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCB52291D6BEF3600E1F513 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F8EB56A1D6E2E0400FADD59 /* SwimsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwimsService.swift; sourceTree = "<group>"; };
 		3FCB52221D6BEF3500E1F513 /* SwimsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCB52251D6BEF3600E1F513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCB52271D6BEF3600E1F513 /* SwimListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimListViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				3FCB52531D6C546100E1F513 /* Swim.swift */,
 				3FCB52551D6C553300E1F513 /* Kilometer.swift */,
 				3FCB52591D6C578500E1F513 /* SwimListViewModel.swift */,
+				3F8EB56A1D6E2E0400FADD59 /* SwimsService.swift */,
 			);
 			path = SwimsTracker;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				3FCB52561D6C553300E1F513 /* Kilometer.swift in Sources */,
 				3FCB525A1D6C578500E1F513 /* SwimListViewModel.swift in Sources */,
 				3FCB52261D6BEF3600E1F513 /* AppDelegate.swift in Sources */,
+				3F8EB56B1D6E2E0400FADD59 /* SwimsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +505,7 @@
 				3FCB524C1D6BEF3600E1F513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FCB524D1D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +514,7 @@
 				3FCB524F1D6BEF3600E1F513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FCB52501D6BEF3600E1F513 /* Build configuration list for PBXNativeTarget "SwimsTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +523,7 @@
 				3FCB52521D6BEF3600E1F513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
