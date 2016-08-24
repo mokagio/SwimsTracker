@@ -12,11 +12,7 @@ class SwimListViewController: UIViewController {
 
   @IBOutlet var tableView: UITableView!
 
-  let dummyViewModel = SwimListViewModel(list: [
-    Swim(date: NSDate(timeIntervalSinceNow: -24 * 6 * 6), length: 2, duration: 60 * 60),
-    Swim(date: NSDate(timeIntervalSinceNow: -2 * 24 * 6 * 6), length: 2.1, duration: 60 * 60),
-    Swim(date: NSDate(timeIntervalSinceNow: -3 * 24 * 6 * 6), length: 2.2, duration: 60 * 60),
-  ])
+  var viewModel: SwimListViewModel?
 
   let cellIdentifier = "cell"
 
@@ -39,17 +35,29 @@ class SwimListViewController: UIViewController {
 extension SwimListViewController: UITableViewDataSource {
 
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return dummyViewModel.sections()
+    guard let viewModel = viewModel else {
+      preconditionFailure("Attempted to load view controller's view without configuring the view model")
+    }
+
+    return viewModel.sections()
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return dummyViewModel.rows(forSectionAtIndex: section) ?? 0
+    guard let viewModel = viewModel else {
+      preconditionFailure("Attempted to load view controller's view without configuring the view model")
+    }
+
+    return viewModel.rows(forSectionAtIndex: section) ?? 0
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    guard let viewModel = viewModel else {
+      preconditionFailure("Attempted to load view controller's view without configuring the view model")
+    }
+
     let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
 
-    guard let swim = dummyViewModel.swim(atIndexPath: indexPath) else {
+    guard let swim = viewModel.swim(atIndexPath: indexPath) else {
       return cell
     }
 
