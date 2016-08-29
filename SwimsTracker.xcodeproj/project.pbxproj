@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6E96B91D73F558001D3C50 /* StatsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E96B81D73F558001D3C50 /* StatsViewModelTests.swift */; };
+		3F6E96BB1D73F5F8001D3C50 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E96BA1D73F5F8001D3C50 /* StatsViewModel.swift */; };
 		3F8EB56B1D6E2E0400FADD59 /* SwimsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8EB56A1D6E2E0400FADD59 /* SwimsService.swift */; };
 		3F8EB56D1D6E384700FADD59 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8EB56C1D6E384700FADD59 /* StatsViewController.swift */; };
 		3FCB52261D6BEF3600E1F513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB52251D6BEF3600E1F513 /* AppDelegate.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F6E96B81D73F558001D3C50 /* StatsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewModelTests.swift; sourceTree = "<group>"; };
+		3F6E96BA1D73F5F8001D3C50 /* StatsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
 		3F8EB56A1D6E2E0400FADD59 /* SwimsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwimsService.swift; sourceTree = "<group>"; };
 		3F8EB56C1D6E384700FADD59 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		3FCB52221D6BEF3500E1F513 /* SwimsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +124,7 @@
 				3FCB52591D6C578500E1F513 /* SwimListViewModel.swift */,
 				3F8EB56A1D6E2E0400FADD59 /* SwimsService.swift */,
 				3F8EB56C1D6E384700FADD59 /* StatsViewController.swift */,
+				3F6E96BA1D73F5F8001D3C50 /* StatsViewModel.swift */,
 			);
 			path = SwimsTracker;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			children = (
 				3FCB523C1D6BEF3600E1F513 /* Info.plist */,
 				3FCB525B1D6C57C200E1F513 /* SwimListViewModelTests.swift */,
+				3F6E96B81D73F558001D3C50 /* StatsViewModelTests.swift */,
 			);
 			path = SwimsTrackerTests;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 			files = (
 				3FCB52281D6BEF3600E1F513 /* SwimListViewController.swift in Sources */,
 				3FCB52541D6C546100E1F513 /* Swim.swift in Sources */,
+				3F6E96BB1D73F5F8001D3C50 /* StatsViewModel.swift in Sources */,
 				3FCB52561D6C553300E1F513 /* Kilometer.swift in Sources */,
 				3FCB525A1D6C578500E1F513 /* SwimListViewModel.swift in Sources */,
 				3F8EB56D1D6E384700FADD59 /* StatsViewController.swift in Sources */,
@@ -287,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6E96B91D73F558001D3C50 /* StatsViewModelTests.swift in Sources */,
 				3FCB525C1D6C57C200E1F513 /* SwimListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
