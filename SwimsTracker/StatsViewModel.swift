@@ -12,6 +12,6 @@ struct StatsViewModel {
   let swims: [Swim]
 
   func distanceLabelText() -> String {
-    return "\(swims.map { $0.length }.reduce(0, combine: (+)))"
+    return "Distance\n\(swims.map { $0.length }.reduce(0, combine: (+)))km"
   }
 }

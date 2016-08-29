@@ -23,6 +23,6 @@ class StatsViewModelTests: XCTestCase {
 
     let output = sut.distanceLabelText()
 
-    XCTAssertEqual(output, "6.1")
+    XCTAssertEqual(output, "Distance\n6.1km")
   }
 }

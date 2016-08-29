@@ -13,6 +13,8 @@ class StatsViewController: UIViewController {
   @IBOutlet var totalLengthLabel: UILabel!
   @IBOutlet var paceLabel: UILabel!
 
+  var viewModel: StatsViewModel!
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -20,7 +22,7 @@ class StatsViewController: UIViewController {
 
     totalLengthLabel.numberOfLines = 0
     totalLengthLabel.textAlignment = .Center
-    totalLengthLabel.text = "Distance\nTODO km"
+    totalLengthLabel.text = viewModel.distanceLabelText()
 
     paceLabel.numberOfLines = 0
     paceLabel.textAlignment = .Center

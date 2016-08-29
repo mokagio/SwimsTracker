@@ -27,7 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       preconditionFailure()
     }
 
-    swimListViewController.viewModel = SwimListViewModel(list: swimsService.allSwims())
+    let swims = swimsService.allSwims()
+    swimListViewController.viewModel = SwimListViewModel(list: swims)
+
+    guard let x = tabBarController.viewControllers?[1] as? UINavigationController else {
+      preconditionFailure()
+    }
+    guard let y = x.topViewController as? StatsViewController else {
+      preconditionFailure()
+    }
+
+    y.viewModel = StatsViewModel(swims: swims)
 
     return true
   }
